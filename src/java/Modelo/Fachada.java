@@ -5,6 +5,7 @@
  */
 package Modelo;
 
+import Datos.CargarDatos;
 import Exception.InvalidUserException;
 import Exception.NotFoundUserException;
 import Sistemas.SistemasUsuarios;
@@ -14,20 +15,33 @@ import Sistemas.SistemasUsuarios;
  * @author Usuario
  */
 public class Fachada {
-    SistemasUsuarios su = SistemasUsuarios.getInstancia();
-    
+    private SistemasUsuarios su;
     private static Fachada instancia;
     
-    private Fachada(){}
+    private Fachada(){
+        this.su = new SistemasUsuarios();
+    }
+    
+    public SistemasUsuarios getSistemasUsuarios(){
+        return this.su;
+    }
     
     public static Fachada getInstancia(){
-        if(Fachada.instancia == null)
-            Fachada.instancia = new Fachada();
+        if(instancia == null){
+            instancia = new Fachada();
+            CargarDatos.CargarDatos();
+        }
         
-        return Fachada.instancia;
+        return instancia;
     }
     
     public Usuario Login(String user, String password) throws InvalidUserException, NotFoundUserException{
         return su.Login(user, password);
+    }
+    
+    public void AgregarUsuario(Usuario usuario){
+        SistemasUsuarios su = this.getSistemasUsuarios();
+        su.AgregarUsuario(usuario);
+        su.getUsuarios();
     }
 }
