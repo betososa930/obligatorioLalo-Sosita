@@ -5,6 +5,7 @@
  */
 package Sistemas;
 
+import Datos.CargarMozos;
 import Exception.InvalidUserException;
 import Exception.NotFoundUserException;
 import Modelo.Usuario;
@@ -18,17 +19,16 @@ import java.util.ArrayList;
  * @author Usuario
  */
 public class SistemasUsuarios {
-    private static SistemasUsuarios instancia;
+
+    public SistemasUsuarios getInstancia() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     private ArrayList<Usuario> usuarios;
     private MapeadorUsuarioMozo mu = new MapeadorUsuarioMozo();
     private MapeadorUsuarioGestor mg = new MapeadorUsuarioGestor();
     
-    private SistemasUsuarios(){}
-    
-    public static SistemasUsuarios getInstancia(){
-        if(SistemasUsuarios.instancia == null)
-            SistemasUsuarios.instancia = new SistemasUsuarios();
-        return SistemasUsuarios.instancia;
+    public SistemasUsuarios(){
+        this.usuarios = new ArrayList();
     }
     
     public ArrayList<Usuario> getUsuarios(){
@@ -47,10 +47,15 @@ public class SistemasUsuarios {
         }
     }
     
+    public void CargarUsuario(Usuario usuario){
+        this.getUsuarios().add(usuario);
+    }
+    
     //Carga iniciar
-    public void PersistirUsuario(Usuario usuario){
-        mu.setUsuario(usuario);
-        Persistencia persistencia = Persistencia.getIntancia();
-        persistencia.guardar(mu);
+    public void AgregarUsuario(Usuario usuario){
+        this.getUsuarios().add(usuario);
+//        mu.setUsuario(usuario);
+//        Persistencia persistencia = Persistencia.getIntancia();
+//        persistencia.guardar(mu);
     }
 }
