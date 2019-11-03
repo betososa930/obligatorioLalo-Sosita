@@ -13,9 +13,9 @@ public class Cliente {
     private int id;
     private String nombre;
     private String email;
-    private Beneficio beneficio;
+    private Ibeneficio beneficio;
 
-    public Cliente(int id, String nombre, String email, Beneficio beneficio) {
+    public Cliente(int id, String nombre, String email, Ibeneficio beneficio) {
         this.id = id;
         this.nombre = nombre;
         this.email = email;
@@ -42,13 +42,15 @@ public class Cliente {
         this.email = email;
     }
 
-    public Beneficio getBeneficio() {
+    public Ibeneficio getBeneficio() {
         return beneficio;
     }
 
-    public void setBeneficio(Beneficio beneficio) {
+    public void setBeneficio(Ibeneficio beneficio) {
         this.beneficio = beneficio;
     }
+
+   
     
     
 }

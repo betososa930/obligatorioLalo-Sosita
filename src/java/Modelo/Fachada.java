@@ -15,7 +15,6 @@ import Sistemas.SistemasUsuarios;
  */
 public class Fachada {
     SistemasUsuarios su = SistemasUsuarios.getInstancia();
-    
     private static Fachada instancia;
     
     private Fachada(){}

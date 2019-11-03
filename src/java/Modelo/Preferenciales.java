@@ -9,7 +9,7 @@ package Modelo;
  *
  * @author pc
  */
-public class DeLaCasa implements Ibeneficio{
+public class Preferenciales implements Ibeneficio {
 
     @Override
     public double CalcularBeneficio() {

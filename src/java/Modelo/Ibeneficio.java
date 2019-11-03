@@ -9,6 +9,6 @@ package Modelo;
  *
  * @author pc
  */
-public class Beneficio {
-    
+public interface Ibeneficio {
+    public double CalcularBeneficio(); 
 }
