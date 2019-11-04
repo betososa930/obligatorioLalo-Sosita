@@ -36,7 +36,7 @@ public class SistemasUsuarios {
     }
     
     public Usuario Login(String user, String password) throws InvalidUserException, NotFoundUserException{
-        if(this.getUsuarios().size() == 0)
+        if(this.getUsuarios().isEmpty())
             throw new NotFoundUserException("No hay usuarios registrados.");
         else{
             for(Usuario usuario : this.getUsuarios()){
