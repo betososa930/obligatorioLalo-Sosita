@@ -81,7 +81,11 @@ and open the template in the editor.
             Username: <input type="text" id="username" name="username">
             Password: <input type="password" id="password" name="password">
             <br/>
-            <select></select>
+            <select name="select">
+                <option value="cocina">Cocina</option> 
+                <option value="bar" selected>Bar</option>
+                <option value="value3">Parrilla</option>
+            </select>
             <br/><br/>
 
             <input type="button" value="Login" onclick="enviarLogin()">

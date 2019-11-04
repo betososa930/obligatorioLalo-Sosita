@@ -13,10 +13,32 @@ import java.util.ArrayList;
  */
 public class UnidadProcesadoradePedido {
     private ArrayList<Pedido> pedidos;
-    
-    public ArrayList<Pedido> getPedidos(){
-        return this.pedidos;
+    private enum Tipo{Cocina,Bar,Parrilla};
+    private Tipo tipo; 
+
+    public UnidadProcesadoradePedido(Tipo tipo) {
+        this.tipo = tipo;
+        this.pedidos= new ArrayList<Pedido>();
     }
+
+    public ArrayList<Pedido> getPedidos() {
+        return pedidos;
+    }
+
+    public void setPedidos(ArrayList<Pedido> pedidos) {
+        this.pedidos = pedidos;
+    }
+
+    public Tipo getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(Tipo tipo) {
+        this.tipo = tipo;
+    }
+
+
+    
     
     public Pedido tomarPedido(Pedido p){
         Pedido retorno = null;
