@@ -3,11 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/pc/OneDrive/Documents/GitHub/obligatorioLalo-Sosita/web/login.html</file>
-            <file>file:/C:/Users/pc/OneDrive/Documents/GitHub/obligatorioLalo-Sosita/src/java/Modelo/Fachada.java</file>
-            <file>file:/C:/Users/pc/OneDrive/Documents/GitHub/obligatorioLalo-Sosita/src/java/Modelo/Usuario.java</file>
-            <file>file:/C:/Users/pc/OneDrive/Documents/GitHub/obligatorioLalo-Sosita/src/java/Sistemas/SistemasUsuarios.java</file>
-            <file>file:/C:/Users/pc/OneDrive/Documents/GitHub/obligatorioLalo-Sosita/src/java/Vista/Web/WsLogin.java</file>
+            <file>file:/C:/Users/Usuario/Documents/GitHub/obligatorioLalo-Sosita/src/java/Sistemas/SistemasUsuarios.java</file>
+            <file>file:/C:/Users/Usuario/Documents/GitHub/obligatorioLalo-Sosita/src/java/Modelo/Mozo.java</file>
+            <file>file:/C:/Users/Usuario/Documents/GitHub/obligatorioLalo-Sosita/src/java/Controlador/ControladorLogin.java</file>
+            <file>file:/C:/Users/Usuario/Documents/GitHub/obligatorioLalo-Sosita/src/java/Modelo/Fachada.java</file>
+            <file>file:/C:/Users/Usuario/Documents/GitHub/obligatorioLalo-Sosita/src/java/Datos/CargarMozos.java</file>
+            <file>file:/C:/Users/Usuario/Documents/GitHub/obligatorioLalo-Sosita/src/java/Modelo/Usuario.java</file>
+            <file>file:/C:/Users/Usuario/Documents/GitHub/obligatorioLalo-Sosita/src/java/Controlador/ControladorMozo.java</file>
+            <file>file:/C:/Users/Usuario/Documents/GitHub/obligatorioLalo-Sosita/src/java/Vista/Web/WsLogin.java</file>
+            <file>file:/C:/Users/Usuario/Documents/GitHub/obligatorioLalo-Sosita/src/java/Modelo/Gestor.java</file>
+            <file>file:/C:/Users/Usuario/Documents/GitHub/obligatorioLalo-Sosita/src/java/Vista/Web/Dto/ListaMesaMozoDTO.java</file>
         </group>
     </open-files>
 </project-private>
